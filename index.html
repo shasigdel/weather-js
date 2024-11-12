@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Add some basic styling (you can customize this) */
+      body {
+        font-family: sans-serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .cities {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .city {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 200px; /* Adjust as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <h1 class="heading">Simple Weather App</h1>
+        <form>
+          <input type="text" placeholder="Search for a city" autofocus />
+          <button type="submit">SEARCH</button>
+          <span class="msg"></span>
+        </form>
+      </div>
+    </section>
+    <section class="ajax-section">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
